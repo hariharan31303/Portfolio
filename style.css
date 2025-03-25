@@ -1,0 +1,470 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F8F7F9;
+    color: #2B2D42;
+}
+
+header {
+    background-color: #2B2D42;
+    color: #F8F7F9;
+    padding: 10px;
+    text-align: left;
+}
+
+.header-content {
+    margin-left: 20px;
+    /* Adjust the margin as needed */
+}
+
+.header-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+    /* Add some space below the name */
+    font-family: 'Futura', sans-serif;
+    /* Use the specified font */
+    font-weight: 500;
+    /* Choose the desired font weight (300, 500, 700, etc.) */
+}
+
+.header-content p {
+    font-size: 1.2em;
+    margin-bottom: 0;
+    /* Remove any default margin */
+}
+
+header {
+    background-color: #2B2D42;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #F8F7F9;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    margin: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #92DCE5;
+}
+
+.section-about,
+.section-projects,
+.section-contact {
+    padding: 60px 0;
+    background-color: #F8F7F9;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    /* Adjust padding as needed */
+}
+
+.about-image {
+    margin-right: 10px;
+    /* Increase the negative margin for more left alignment */
+}
+
+.profile-image {
+    width: 500px;
+    /* Adjust the size of the image as needed */
+    height: 500px;
+    border-radius: 50%;
+    /* Make the image round */
+    border: 5px solid #fff;
+    /* Add a border */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Add a shadow */
+    transition: transform 0.3s, box-shadow 0.3s;
+    /* Add smooth transitions */
+}
+
+.profile-image:hover {
+    transform: scale(1.1);
+    /* Increase scale on hover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    /* Change box-shadow on hover */
+}
+
+.about-text {
+    max-width: 650px;
+    /* Adjust the max-width to fit the larger image */
+    text-align: left;
+    /* Align text to the left */
+    font-family: 'Roboto', sans-serif;
+    /* Use the specified font */
+}
+
+.about-text h2 {
+    font-size: 2em;
+    /* Adjust the font size as needed */
+    margin-bottom: 10px;
+    /* Add space below the heading */
+}
+
+.about-text p {
+    font-size: 1.2em;
+    /* Adjust the font size as needed */
+    line-height: 1.6;
+    /* Improve readability with increased line height */
+}
+
+
+/* Add this style to make the image responsive */
+
+.profile-image {
+    max-width: 60%;
+    height: auto;
+}
+
+.section-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* Update styles for the skills section */
+
+.section-skills {
+    background-color: #2B2D42;
+    padding: 60px 0;
+    color: #F8F7F9;
+}
+
+.section-skills h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.skill-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill-item {
+    width: calc(33.33% - 20px);
+    /* Adjust the width and margin as needed */
+    margin: 0 10px 20px 10px;
+}
+
+.skill-bar {
+    height: 10px;
+    background-color: #92DCE5;
+    position: relative;
+}
+
+.skill-bar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #ffc107;
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+.skill-bar[data-percent="75"]::after {
+    width: 75%;
+}
+
+.skill-bar[data-percent="87"]::after {
+    width: 87%;
+}
+
+.skill-bar[data-percent="90"]::after {
+    width: 90%;
+}
+
+
+/* Update styles for the languages section */
+
+.section-languages {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+.section-languages h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.language-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    /* Adjust the gap between items as needed */
+}
+
+.language-item {
+    text-align: center;
+}
+
+.language-item img {
+    width: 50px;
+    /* Adjust the size of the icons as needed */
+    height: 50px;
+}
+
+.language-item p {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.section-tool {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+.section-tool h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.tool-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    /* Adjust the gap between items as needed */
+}
+
+.tool-item {
+    text-align: center;
+}
+
+.tool-item img {
+    width: 50px;
+    /* Adjust the size of the icons as needed */
+    height: 50px;
+}
+
+.tool-item p {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #fbf9f9;
+}
+
+
+/* Update styles for the projects section */
+
+.section-projects {
+    background-color: #f5f5f5;
+    padding: 60px 0;
+}
+
+.section-projects h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: S40px;
+}
+
+.project-item {
+    width: 800px;
+    padding: 50px;
+    background-color: #F8F7F9;
+    color: #2B2D42;
+    border: 1px solid #92DCE5;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.project-item h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    transition: color 0.3s;
+}
+
+.project-item h3 :hover {
+    color: #ffc107;
+}
+
+.project-item p {
+    font-size: 1em;
+    color: #333;
+}
+
+
+/* Update styles for the contact section */
+
+.section-contact {
+    background-color: #ced3e1;
+    padding: 60px 0;
+}
+
+.section-contact h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.contact-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.contact-link {
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    color: #2B2D42;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-link img {
+    width: 40px;
+    /* Adjust the size of the icons as needed */
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.contact-link:hover {
+    background-color: #92DCE5;
+    color: #fafafb;
+}
+
+
+/* Add these styles to your existing styles.css file */
+
+
+/* Certificate section styles */
+
+#certificates {
+    background-color: #f5f5f5;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#certificates h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.certificate-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+/* Update the styles in your existing stylesheet (styles.css) */
+
+
+/* Update the styles in your existing stylesheet (styles.css) */
+
+.certificates-scroll {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    white-space: nowrap;
+}
+
+.certificate-item {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    margin-right: 10px;
+    max-width: 200px;
+    /* Set a maximum width for the certificate box */
+    transition: transform 0.3s;
+    /* Add a smooth transition for the hover effect */
+}
+
+.certificate-item:hover {
+    transform: scale(1.1);
+    /* Increase the size on hover */
+}
+
+.certificate-item img {
+    max-width: 100%;
+    /* Make the image responsive within the box */
+    height: auto;
+    border: 1px solid #ddd;
+    /* Add a border for better visibility */
+    border-radius: 8px;
+    /* Add rounded corners */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* File input styles (hide it) */
+
+input[type="file"] {
+    display: none;
+}
+
+footer {
+    background-color: #2B2D42;
+    color: #F8F7F9;
+    text-align: center;
+    padding: 10px 0;
+}
